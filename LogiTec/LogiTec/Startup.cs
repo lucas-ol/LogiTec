@@ -31,6 +31,7 @@ namespace LogiTec
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            Utils.Config.Instance.ConnectionString = Configuration.GetConnectionString("sql");
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
