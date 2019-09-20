@@ -7,9 +7,9 @@ namespace LogiTec.Business
     public class Usuario : IDisposable
     {
 
-        public Utils.FeedBack Cadastrar(Entities.Usuario usuario)
+        public Utils.FeedBack Cadastrar(Entities.Usuario.Usuario usuario)
         {
-            using (var ctx = new Data.ModelContext())
+            using (var ctx = new Data.Model.LogiTectContext())
             {
                 ctx.Usuarios.Add(usuario);
             }

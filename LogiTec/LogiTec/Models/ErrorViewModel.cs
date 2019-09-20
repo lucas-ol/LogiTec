@@ -1,6 +1,6 @@
 using System;
 
-namespace LogiTec.Models
+namespace LogiTec.MVC.Models
 {
     public class ErrorViewModel
     {

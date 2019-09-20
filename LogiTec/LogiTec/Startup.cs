@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace LogiTec
+namespace LogiTec.MVC
 {
     public class Startup
     {
@@ -32,6 +32,7 @@ namespace LogiTec
             });
 
             Utils.Config.Instance.ConnectionString = Configuration.GetConnectionString("sql");
+                       
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

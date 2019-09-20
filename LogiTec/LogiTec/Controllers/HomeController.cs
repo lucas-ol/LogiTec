@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using LogiTec.Models;
+using LogiTec.MVC.Models;
 
-namespace LogiTec.Controllers
+namespace LogiTec.MVC.Controllers
 {
     public class HomeController : Controller
     {
